@@ -29,7 +29,7 @@ git clone https://github.com/UzzyDizzy/claude-setup.git
 # from your project root
 python ./claude-setup/claude-setup.py
 # then drop CLAUDE.md into the project root
-cp /path/to/claude-setup/CLAUDE.md ./CLAUDE.md
+cp ./claude-setup/CLAUDE.md ./CLAUDE.md
 ```
 
 `claude-setup.py` clones the 5 skill repos into `.claude/skills/` (gstack, gsd, superpowers,
