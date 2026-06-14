@@ -70,8 +70,15 @@ and refresh time stored in the status file under *Orientation*. Prefer re-runnin
 already chose; only switch tools if the user asks. Treat this artifact as the factual map of the repo
 when deriving goals and the index — do not invent file/function names that aren't in it or on disk.
 
-> graphify / understand-anything are installed **globally** by `claude-setup.py`. This skill does not
-> wrap their flags; run them as the user runs them and store the resulting artifact path.
+> These two tools are set up by `claude-setup.py` but are **different kinds of thing**:
+> - **graphify** is a global CLI (a `uv`/pip tool, command `graphify`). Invoke it like any shell
+>   command and read the wiki it writes.
+> - **understand-anything** is a **Claude Code plugin** (added via `/plugin marketplace add` +
+>   `/plugin install understand-anything`), not a PATH binary. Use it through its plugin
+>   command/skill inside this session, not via a shell call.
+>
+> This skill does not wrap either tool's flags — run each the way the user runs it and store the
+> resulting artifact path + timestamp under *Orientation*.
 
 ## Phase cadence — what to ask, and when
 
