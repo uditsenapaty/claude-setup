@@ -65,7 +65,7 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 | Turn results into tables + conclusions | `ml-results-synthesizer` | 7 |
 
 ### B. General engineering → the 5 cloned repos
-Cloned into `.claude/skills/` or `.claude/skills/**/skills/` before each session (see `claude-setup.py`).
+Cloned into `.claude/skills/` having skills inside `.claude/skills/**/skills/` before each session (see `claude-setup.py`).
 
 | Need | Repo · skill | Notes |
 |------|--------------|-------|
